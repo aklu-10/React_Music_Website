@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
-    min-height:600px;
+    min-height:calc(100% + 50%);
     height:100vh;
     padding:20px 0;
     background:url('/images/11.jpg');

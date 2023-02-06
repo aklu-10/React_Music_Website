@@ -14,7 +14,7 @@ const Container = styled.header`
     z-index:5;
     width:100vw;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     padding:15px 30px;
     background:#084db4;
@@ -27,7 +27,7 @@ const Navigation = styled.nav`
     flex-wrap:wrap;
 
     ${desktop(css`
-        ${props=>props.type!=='mobile'?'display:none':'display:flex'}
+        ${props=>props.type!=='mobile'?'display:none':'display:flex; flex-direction:column;'}
     `)}
 `;
 
@@ -66,6 +66,7 @@ const Text = styled.p`
 
 const MobileNavigation = styled.nav`
     position:absolute;
+    left:0;
     top:70px;
     padding:20px;
     background:#084db4;
