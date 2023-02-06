@@ -23,6 +23,7 @@ const SmallHeading = styled.h2`
     color:white;
     letter-spacing:8px;
     font-weight:100;
+    font-size:1rem;
     font-family: 'Unbounded', cursive;
     margin:14px 0;
 `;
