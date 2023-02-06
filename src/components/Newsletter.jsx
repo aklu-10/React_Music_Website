@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
+import {css} from 'styled-components';
+import {tablet } from './responsiveCss';
+
 
 const Container = styled.div`
-    min-height:calc(100% + 50%);
     height:100vh;
     padding:20px 0;
     background:url('/images/11.jpg');
@@ -11,6 +13,10 @@ const Container = styled.div`
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+    ${tablet(css`
+        height:700px;
+
+    `)}
 `;
 
 const LargeHeading = styled.h1`
