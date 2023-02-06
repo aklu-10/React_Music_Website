@@ -8,6 +8,8 @@
 
 body
 {
+    min-width:100vw;
+    min-height:100vh;
     overflow-x: hidden;
 }
 
@@ -30,5 +32,14 @@ body
     html
     {
         font-size:90%;
+    }
+}
+
+
+@media (max-width:468px)
+{
+    html
+    {
+        font-size:70%;
     }
 }

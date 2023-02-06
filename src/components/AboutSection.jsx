@@ -17,9 +17,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     display:flex;
-    width:100vw;
     flex-direction:column;
-    width:max-content;
     position:relative;
     padding:0 10%;
     ${desktop(css`
