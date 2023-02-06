@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
+    min-height:600px;
     height:100vh;
-    padding:30px 0;
+    padding:20px 0;
     background:url('/images/11.jpg');
     background-size:cover;
     display:flex;
