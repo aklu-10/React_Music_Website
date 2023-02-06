@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { css } from 'styled-components';
-import { desktop } from './responsiveCss';
+import { desktop, tablet } from './responsiveCss';
 
 const Container = styled.div`
     min-height:100vh;
@@ -17,6 +17,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     display:flex;
+    margin-left:10%;
     justify-content:center;
     align-items:center;
     flex-direction:column;
@@ -24,42 +25,51 @@ const Wrapper = styled.div`
     ${desktop(css`
         margin:auto;
     `)}
+
+    ${tablet(css`
+        margin-left:0%;
+        margin:0 auto;
+    `)}
 `;
 
 const Caption = styled.h4`
     letter-spacing:4px;
     font-size:1.2rem;
     color:white;
+    align-self:flex-start;
 `;
 
+
 const Heading = styled.h1`
+    width:50vw;
     font-size:3.2rem;
     word-spacing:10px;
-    text-align:center;
     letter-spacing:5px;
-    line-height:40px;
     margin:8px 0;
     color:white;
     font-family: 'Unbounded', cursive;
     ${desktop(css`
         font-size:2.4rem;
     `)}
+
+    ${tablet(css`
+        width:90vw;
+    `)}
+    
 `;
 
 const Para = styled.p`
     position:relative;
     bottom:0;
     left:0;
-    max-width:440px;
+    width:50vw;
     line-height:40px;
     color:lightgray;
     word-break:break-all;
-    
-    
-    ${desktop(css`
-        width:70%;
-    `)}
 
+    ${tablet(css`
+        width:90vw;
+    `)}
     
 `;
 
@@ -67,9 +77,9 @@ const AboutSection = () => {
   return (
     <Container>
         <Wrapper>
-        <Caption>
-            THE STORY
-        </Caption>
+            <Caption>
+                THE STORY
+            </Caption>
             <Heading>A COMPUTER SCIENTIST USING AI TO PRODUCE MUSIC
             </Heading>
 
