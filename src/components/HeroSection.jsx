@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     background-image:url('/images/2.jpg');
     background-size:cover;
+    min-height:720px;
     height:100vh;
     display:flex;
     justify-content:center;
